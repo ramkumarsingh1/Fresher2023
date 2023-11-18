@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+    color: #fff;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+a:hover{
+    color: black;
+}
+.navbar {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: brown;
+    color: #ffff;
+}
+.navbar ul{
+    display: flex;
+    gap: 4rem;
+}
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0px auto;
+}
+.navbar .toggle_btn{
+    color: #ffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.haier_me{
+    background-color: rgb(247, 103, 7);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.haier_me:hover{
+    scale: 1.05;
+    color: white;
+
+}
+.haier_me:active{
+    scale: 0.95;
+}
+/* dropdown menue */
+
+.dropdown_menu{
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background-color: orangered;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu.open{
+    height: 280px;
+}
+.dropdown_menu .haier_me{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@media  ( max-width : 800px){
+    .navbar ul{
+        display: none;
+    }
+    .navbar .haier_me{
+        display: none;
+    }
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+}
+
+
+.panel{
+    width: 100%;
+    height: 100vh;
+}
+.panel img{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+/* footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+.footer p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#back-to-top {
+  
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: chocolate;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
