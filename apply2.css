@@ -43,7 +43,7 @@ hr {
 .registerbtn:hover {  
   opacity: 1;  
 }
-#msg{
+#res{
   color: green;
   font-weight: bold;
   
