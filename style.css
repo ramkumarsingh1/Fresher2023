@@ -116,6 +116,58 @@ a:hover{
 }
 
 
+/* countdown */
+.event-container {
+    text-align: center;
+    padding: 20px;
+    border: 2px;
+    border-radius: transparent;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.countdown {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+
+/* event details */
+
+main {
+    padding: 20px;
+    text-align: center;
+    background-color: #d46969;
+}
+
+main h1 {
+    color: #3498db;
+}
+
+ main p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: royalblue;
+}
+
+ main .event-details {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+main .event-details h3{
+    color: #333;
+}
+
+main .event-details div {
+    flex: 1;
+    padding: 30px;
+    margin: 10px;
+    background-color: orange;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 /* footer */
 .footer {

@@ -54,6 +54,62 @@
     <img src="img/new banner.jpg" alt="">
 </div>
 
+<!-- count down -->
+<div class="event-container">
+    <h1>College Fresher Party</h1>
+    <p>Welcome to the most exciting event of the year!</p>
+
+    <div class="countdown" id="countdown"></div>
+
+    <script>
+        // Set the date we're counting down to
+        const countDownDate = new Date("Dec 1, 2023 00:00:00").getTime();
+
+        // Update the countdown every 1 second
+        const x = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML =
+                days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "The party is here!";
+            }
+        }, 1000);
+    </script>
+</div>
+
+
+<!-- event details -->
+
+<main>
+    <h2>Event Details</h2>
+    <p>Get ready for an amazing fresher party with music, dance, and lots of surprises!</p>
+
+    <div class="event-details">
+        <div>
+            <h3>Date</h3>
+            <p>November 30, 2023</p>
+        </div>
+        <div>
+            <h3>Time</h3>
+            <p>7:00 PM onwards</p>
+        </div>
+        <div>
+            <h3>Location</h3>
+            <p>College Auditorium</p>
+        </div>
+    </div>
+</main>
+
     
     <!-- Your page content goes here -->
 
@@ -61,7 +117,7 @@
         <a href="#photos">Photos</a>
         <a href="#videos">Videos</a>
         <a href="#contact">Contact</a>
-        <p>123 College Street, Cityville, State - 12345</p>
+        <p>NH-24, Sitapur Road, B.K.T., Lucknow - 226201</p>
 
         <div class="social-icons">
             <a href="mailto:info@example.com"><i class="fas fa-envelope"></i></a>
