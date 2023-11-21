@@ -114,6 +114,21 @@ a:hover{
     width: 100%;
     height: 100vh;
 }
+.panel1{
+    display: none;
+}
+@media (max-width : 500px){
+    .panel{
+        display: none;
+    }
+    .panel1{
+        display: block;
+    }
+    .panel1 img{
+        width: 100%;
+        height: 100vh;
+    }
+}
 
 
 /* countdown */
@@ -137,17 +152,19 @@ a:hover{
 main {
     padding: 20px;
     text-align: center;
-    background-color: #d46969;
+    background-color: grey;
 }
 
-main h1 {
-    color: #3498db;
+main h2 {
+    color: white;
+    font-size: 30px;
+    font-size: 800;
 }
 
  main p {
     font-size: 18px;
     line-height: 1.6;
-    color: royalblue;
+    color: white;
 }
 
  main .event-details {
@@ -157,16 +174,24 @@ main h1 {
     flex-wrap: wrap;
 }
 main .event-details h3{
-    color: #333;
+    color: black;
+    font-size: 25px;
+    font-weight: 800;
 }
 
 main .event-details div {
     flex: 1;
     padding: 30px;
     margin: 10px;
-    background-color: orange;
+    background-color: rgb(190, 164, 116);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(241, 229, 229, 0.1);
+    transition: ease 0.5s;
+
+}
+main .event-details div:hover{
+    background-color: yellow;
+    transform: scaleY(1.1);
 }
 
 /* footer */
@@ -192,10 +217,11 @@ main .event-details div {
 
 .social-icons a {
     color: white;
-    font-size: 25px;
+    font-size: 28px;
     text-decoration: none;
     margin: 0 10px;
 }
+
 
 #back-to-top {
   
